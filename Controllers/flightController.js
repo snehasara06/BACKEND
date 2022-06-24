@@ -21,10 +21,12 @@ router.post('/', (req, res) => {
         lastname: req.body.lastname,
         departure: req.body.departure,
         arrival: req.body.arrival,
+
     });
 
 
     fly.save((err, docs) => {
+        console.log("first name: ",firstname)   
         if (!err) {
             res.send(docs);
         }

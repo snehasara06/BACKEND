@@ -1,5 +1,7 @@
 const mongoose=require('mongoose');
-mongoose.connect('mongodb://localhost:27017/Travel',(err)=>{
+
+// mongodb://localhost:27017/Travel
+mongoose.connect('mongodb+srv://SnehaS:Angel2000@cluster0.wurpy.mongodb.net/Travel?retryWrites=true&w=majority',(err)=>{
     if(!err)
     console.log("Connected successfully!!");
     else
